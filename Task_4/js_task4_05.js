@@ -1,5 +1,6 @@
-function stringOuter()
-{  
+function stringOuter(String, Number)
+{   this.Number =Number;
+    this.String= String;
     var myNumber=this.Number;
     var myString=this.myString;
     myNumber=8;
