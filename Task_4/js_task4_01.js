@@ -4,3 +4,4 @@ function spaceFinder(){
     return str;
 }
 console.log(spaceFinder());
+console.log(spaceFinder());
