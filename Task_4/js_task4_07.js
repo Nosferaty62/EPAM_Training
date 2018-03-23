@@ -5,15 +5,17 @@ function stringOuter()
     myNumber=3;
      myString="4 символа и три точки. ";
      subString="dddd";
-     //subString=subString.split(' ');
-        myString=myString.split(' ');
-    for(i=0; i<=myString.length;i++)
-    {
-      if(myString[i]==myNumber)
-      {
-           myString=myString.concat(myString[i+1]+subString[0]);
-      }
-     }
+     subString=subString.split(' ');
+       // myString=myString.split(' ');
+        myString=myString.split(' ',myNumber);
+        for(i=0; i<=myString.length;i++){
+            if(myString[0 +myNumber]=myNumber){
+                myString[i]=subString[0];
+            }
+           // myString[0 +myNumber]=subString[0];
+           // myString[i]=myString[i+1];
+            
+        }
     
     return myString.join(" ");
 
