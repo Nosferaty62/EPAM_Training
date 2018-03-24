@@ -5,7 +5,13 @@ myObj={
 }
 var myFunc=function(Object)
 {
- this.Object= myObj;
- 
+
+    for(key in myObj)
+    {
+        console.log(key + "="+ myObj[key]);
+    }
+    return myObj;
 }
-console.log(myObj);
+
+console.log(myFunc());
+
