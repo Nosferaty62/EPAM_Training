@@ -1,50 +1,22 @@
-function sum(a,b)
-{
-    return a+b;
-}
-
-function difference(a,b)
-{
-    return a-b;
-}
-
-function multiply(a,b)
-{
-    return a*b;
-}
-function divide(a,b)
-{
-    return a/b;
-}
-
-function calculate(oper)
-{ 
-  var a = 0;
-  var b = 0;
-    	
-  
-  switch (oper)                      
-  {                                   
-    case 1:   
-    {
-        function sum(a,b)
-      break;
-    }
-    case 2:   
-    {
-        function difference(a,b)
-      break;
-    }
-    case 3:  
-    {
-        function multiply(a,b)
-      break;
-    }
-    case 4:   
-    {
-        function divide(a,b)
-      break;
-    }
+var calculator = {
+  sum: function summary(a,c) {
+    return function(a,b) {
+      return a + b;
+    };
+  },
+  dif: function difference(a, b) {
+    return a - b;
+  },
+  mult: function multiply(a, b) {
+    return a * b;
+  },
+  div: function divide(a, b) {
+    return a / b;
   }
-}
-console.log(calculate(9*4));
+};
+
+console.log(calculator.sum(1,2));
+console.log(calculator.dif(1,2));
+console.log(calculator.mult(1,2));
+console.log(calculator.div(1,2));
+
