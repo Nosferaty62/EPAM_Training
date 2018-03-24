@@ -5,6 +5,7 @@ myObj={
 }
 var myFunc=function(Object)
 {
+
     for(key in myObj)
     {
         console.log(key + "="+ myObj[key]);
@@ -13,3 +14,4 @@ var myFunc=function(Object)
 }
 
 console.log(myFunc());
+
