@@ -1,8 +1,7 @@
 function stringOuter(String, Number)
-{   this.Number =Number;
-    this.String= String;
-    var myNumber=this.Number;
-    var myString=this.myString;
+{   
+    var myNumber;
+    var myString;
     myNumber=8;
      myString="4 символа и три точки";
     // myNumber=4;
