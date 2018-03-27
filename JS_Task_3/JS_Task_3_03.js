@@ -1,6 +1,6 @@
-function myCompare(Object,String){
-
- var myObject={
+function myCompare(){
+var myObject
+myObject={
     age:21,
     Name:"Dima",
     Country:"Russia"
