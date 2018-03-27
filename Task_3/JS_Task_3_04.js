@@ -1,6 +1,6 @@
 function myCompare(Object,String){
-    myObject=this.Object;
-    myObject={
+    
+   var myObject={
         age:21,
         Name:"Dima",
         Country:"Russia"

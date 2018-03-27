@@ -6,16 +6,15 @@ function myCompare(Object,String){
     Country:"Russia"
 }
 
-var myBoolean;
-myBoolean= false;
+
 var myString;
 //myString="dsfd";
 myString="Country";
 
-for( var key in myObject){
+for( var keys in myObject){
     
-    toString:key;
-    if(key==myString){
+    toString:keys;
+    if(keys==myString){
         myBoolean=true;
     }
 }
