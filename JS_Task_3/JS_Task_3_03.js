@@ -1,20 +1,21 @@
-function myCompare(Object,String){
-
- var myObject={
+function myCompare(){
+var myObject
+myObject={
     age:21,
     Name:"Dima",
     Country:"Russia"
 }
 
-
+var myBoolean;
+myBoolean= false;
 var myString;
 //myString="dsfd";
 myString="Country";
 
-for( var keys in myObject){
+for( var key in myObject){
     
-    toString:keys;
-    if(keys==myString){
+    toString:key;
+    if(key==myString){
         myBoolean=true;
     }
 }

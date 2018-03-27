@@ -1,6 +1,6 @@
 function myCompare(Object,String){
-    
-   var myObject={
+    myObject;
+    myObject={
         age:21,
         Name:"Dima",
         Country:"Russia"
@@ -8,7 +8,7 @@ function myCompare(Object,String){
     
     var myBoolean;
     myBoolean= false;
-    var newProperty=this.String;
+    var newProperty;
     newProperty="new";
   
     for( var key in myObject)
