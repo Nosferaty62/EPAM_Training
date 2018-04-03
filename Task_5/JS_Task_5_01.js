@@ -1,24 +1,30 @@
 var calculator = {
-  sum: (function summary(a) {
-    return function(b) {
-      return a + b;
-    };
-  })(),
+  result :0,
+  sum: function summary(a,b) { 
+    this.result =a+b;
+    return this.result;
+    
+  },
   dif: function difference(a, b) {
-    return a - b;
+    this.result =a - b;
+    return this.result;
   },
   mult: function multiply(a, b) {
-    return a * b;
+    this.result =a * b;
+    return this.result;
   },
   div: function divide(a, b) {
-    return a / b;
+    this.result =a / b;
+    return this.result;
   },
   res: function reset(){
-    return 0;
+    this.result=0;
+   return this.result;
   },
-  getResl: function getResult(){
+  getResl: function getResult(a,b){
     
-    return calculator.mult(1,4);
+    this.result= this.result;
+    return this.result;
   }
 };
 
@@ -27,5 +33,5 @@ console.log(calculator.dif(1,2));
 console.log(calculator.mult(1,2));
 console.log(calculator.div(1,2));
 console.log(calculator.getResl());
-console.log(calculator.res(1,2));
+console.log(calculator.res());
 
