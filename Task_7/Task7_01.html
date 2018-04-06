@@ -5,6 +5,7 @@
      <title required>
         Form Here
     </title>
+    <link rel="stylesheet" href="7_01.css" />
         <meta charset="utf-8">
         <title > Homework seven</title>
         <style>
@@ -13,27 +14,34 @@
         </style>
 </head>
 <body>
-        <caption align="center" required aria-required="true">Form Here</caption>
+        <caption align="center" required ="true">Form Here</caption>
         <hr noshade size="2" collor="black"></hr>
 <form>
    <fieldset>
-       <p>
-            <label>Name</label>
-            <input type="text" name="name" required>
-        </p>
+       <div >
+           <a class="podskazka" title="Заполните мое поле" >   
+               <label for="Name">Name</label>
+            <input id="Name" type="text" name="name" required></a>
+             
+          
+            
+        </div>
         
-        <p>
-            <label>Email</label>
-            <input type="email" name="email" required>
-        </p>
-        <p>
-            <label>website</label>
-            <input type="url" name="website" required>
-        </p>
-        <p>
-            <label>message</label>
-            <input type="textarea" name="message" required>
-        </p>
+        <div>
+                <a class="podskazka" title="Заполните мое поле" > 
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required></a>
+        </div>
+        <div>
+                <a class="podskazka" title="Заполните мое поле" > 
+            <label  for="website">website</label>
+            <input id="website" type="url" name="website" required></a>
+        </div>
+        <div>
+                <a class="podskazka" title="Заполните мое поле" > 
+            <label  for="message">message</label>
+            <input id="message" type="textarea" name="message" required></a>
+        </div>
     </fieldset>
     <input type= "submit" name="submit">
 </form>

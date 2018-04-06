@@ -1,0 +1,9 @@
+.podskazka{
+    display: inline;
+    position: relative;
+}
+.podskazka:hover:after{
+    content: attr(title);
+    position: absolute;
+  
+}
