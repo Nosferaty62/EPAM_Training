@@ -1,9 +1,119 @@
-.podskazka{
+/* .podskazka{
     display: inline;
     position: relative;
+    
 }
 .podskazka:hover:after{
     content: attr(title);
     position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent; 
+    border-right:5px solid red; 
   
+} */
+.wrapper{
+    
+position: relative;
+}
+.tooltip{ 
+    opacity: 0;
+    display: block;
+    position: absolute;
+    right: 1012px;
+    top: 0;
+    color: #fff;
+    background-color: orangered;
+   
+}
+.tooltip::before{
+    content: " "; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid blue; 
+}
+.tooltip1::before{
+    content: " "; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid blue; 
+}
+.tooltip2::before{
+    content: " "; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid blue; 
+}
+.tooltip3::before{
+    content: " "; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid blue; 
+}
+.tooltip1{
+    
+    opacity: 0;
+    display: block;
+    position: absolute;
+    right: 1000px;
+    top: 0;
+    color: #fff;
+    background-color: orangered;
+   
+}
+.tooltip2{
+    
+    opacity: 0;
+    display: block;
+    position: absolute;
+    right: 965px;
+    top: 0;
+    color: #fff;
+    background-color: orangered;
+   
+}
+.tooltip3{
+    
+    opacity: 0;
+    display: block;
+    position: absolute;
+    right: 965px;
+    top: 0;
+    color: #fff;
+    background-color: orangered;
+    
+}
+
+#Name{
+    margin-left: 17px;
+}
+#email{
+    margin-left: 17px;
+    
+}
+#website{
+    margin-left: 4px;
+}
+#Name:focus + .tooltip{
+   
+    display: block;
+    opacity: 1;
+    
+}
+#email:focus + .tooltip1{
+
+    display: block;
+    opacity: 1;
+}
+#website:focus + .tooltip2{
+   
+    display: block;
+    opacity: 1;
+}
+
+#message:focus + .tooltip3{
+  
+    display: block;
+    opacity: 1;
 }

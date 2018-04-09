@@ -2,45 +2,40 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-     <title required>
+    <title required>
         Form Here
     </title>
     <link rel="stylesheet" href="7_01.css" />
-        <meta charset="utf-8">
-        <title > Homework seven</title>
-        <style>
- 
-
-        </style>
+    <meta charset="utf-8">
+        
+        
 </head>
 <body>
         <caption align="center" required ="true">Form Here</caption>
         <hr noshade size="2" collor="black"></hr>
 <form>
    <fieldset>
-       <div >
-           <a class="podskazka" title="Заполните мое поле" >   
-               <label for="Name">Name</label>
-            <input id="Name" type="text" name="name" required></a>
-             
-          
-            
+       <div class="wrapper" >
+                <label for="Name">Name:</label>
+                <input id="Name" type="text" name="name" required>
+                <span class="tooltip"> Введите имя </span>      
         </div>
+           
         
-        <div>
-                <a class="podskazka" title="Заполните мое поле" > 
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" required></a>
+        <div class="wrapper">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" required>
+                <span class="tooltip1">Введите Email</span>
         </div>
-        <div>
-                <a class="podskazka" title="Заполните мое поле" > 
-            <label  for="website">website</label>
-            <input id="website" type="url" name="website" required></a>
+        <div class="wrapper">
+                <label  for="website">Website:  </label>
+                <input id="website" type="url" name="website" required>
+                <span class="tooltip2">Введите адрес сайт</span>
         </div>
-        <div>
-                <a class="podskazka" title="Заполните мое поле" > 
-            <label  for="message">message</label>
-            <input id="message" type="textarea" name="message" required></a>
+        <div class="wrapper">
+                <label  for="message">Message:</label>
+                <input id="message" type="textarea" name="message" required>
+                <span class="tooltip3">Введите сообщение</span>
         </div>
     </fieldset>
     <input type= "submit" name="submit">
