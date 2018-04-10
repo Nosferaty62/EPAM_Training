@@ -1,0 +1,53 @@
+.body
+{
+  background-color: black;
+}
+.square
+{
+    width: 80px;
+    height: 80px;
+    margin: 200px;
+    margin-left:200px;
+    margin-right:200px;
+    animation-name: spin;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    background: linear-gradient(rgba(0, 4, 255, 0.952), yellow);
+}
+@keyframes spin{
+    0% 
+    {
+        transform: rotate(0deg)
+    }
+    
+    50%
+    {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg); 
+        width: 180px;
+        height: 180px;  
+        background: linear-gradient(rgb(255, 0, 0), rgb(4, 0, 255));
+    }
+    75%
+    {   -o-transform: skew(-20deg, 20deg);
+        -ms-transform: skew(-20deg, 20deg);
+        -moz-transform: skew(-20deg, 20deg);
+        -webkit-transform: skew(-20deg, 20deg);
+        transform: skew(-20deg, 20deg);
+        background: linear-gradient(rgba(0, 4, 255, 0.952), yellow);
+    }
+    100%
+    {
+        -webkit-transform-origin: 110% 110%;
+        -ms-transform-origin: 110% 110%;
+        transform-origin: 110% 110%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+    }
+}
